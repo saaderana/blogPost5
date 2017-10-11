@@ -39,13 +39,12 @@ describe('Blog Posts', function(){
             author: 'Emma Goldman'
         };
         const expectedKeys = ['id', 'publishDate'].concat(Object.keys(newPost));
-
         return chai.request(app)
         .post('/blog-posts')
         .send(newPost)
         .then(function(res){
             res.should.have.status(201);
-            res.body.should.be.json;
+            res.should.be.json;
             res.body.should.be.a('object');
             res.body.should.have.all.keys(expectedKeys);
             res.body.title.should.equal(newPost.title);
