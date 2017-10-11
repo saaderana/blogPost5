@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy: powerful-ocean-77110
+  provider: heroku
+  api_key:
+    secure: NhviWRbOZikah0wS28hN1qzYmeg9bHiGQLBBLSwVlCp2Dc0FZuWBZmyCpLIyqNS/VGQC2wd9WfNqLDDh52urOWheSjo4Uw1qUvVB/jgIXk8NAdCpm2qsbADU9UrjxuR7yJ4CFplR5ZrpU2aB8gQhfmOdh1JClv/FPiYxZ2KWtIxYO3xgdooYj4fMUM/WzbwdZCl/4DyfX0cPGobIhfI2u/v26lJs9lvp7xv3t6izx+XNwo+1gd23PaH/dgyyjqJV0iyvr1b/1nUJpk540oYVPX8y7FST8VUzzXQQEyZiGrybaOK5xZpfCdPRhy/u7Gemas/6isFMVtujzABXwcznQc7Avd51bBvqEs/d8CBJfZrFvEt8em4+EZDVswvuZkBnHnxnT9vSmv1UeqPnUJAIKn07EHb/v811+PJTNuTpNh2chEf8OXCp2rjusF8uW228xb9Ki4meYJnshETJ5lPIkfInuCQBWMO5+SxmTLSLZltX7hl7mvD9z110Jg/wSCfQDrsekWsQpEEgrsTAOaY+l70p+drTNgAD8TwG4Xjo1DMN5fyTejmVD8EmdcW6AJ+azzmJo2/p7ylJsJtpYI/nAa9ml3/VdLKSDIVA01g0f3dR1eTAa9Xi+Nh4puosDGk7lOg0ivl7WPxwlOsk5JOZfMD9KrPRNqVzZduq40eC5o8=
+  app: blogPost5
+  on:
+    repo: saaderana/blogPost5
