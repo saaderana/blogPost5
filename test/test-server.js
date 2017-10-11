@@ -45,7 +45,6 @@ describe('Blog Posts', function(){
         .send(newPost)
         .then(function(res){
             res.should.have.status(201);
-            res.should.be.json;
             res.body.should.be.json;
             res.body.should.be.a('object');
             res.body.should.have.all.keys(expectedKeys);
