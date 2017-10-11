@@ -26,8 +26,8 @@ describe('Blog Posts', function(){
             res.body.should.be.a('array');
             res.body.length.should.be.above(0);
             res.body.forEach(function(item){
-                items.should.be.a('object');
-                items.should.have.all.keys(
+                item.should.be.a('object');
+                item.should.have.all.keys(
                     'id', 'title', 'content', 'author', 'publishDate')
             });
         });
