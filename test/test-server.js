@@ -24,7 +24,7 @@ describe('Blog Posts', function(){
             res.should.have.status(200);
             res.should.be.json;
             res.body.be.a('array');
-            res.body.length.shoulld.be.above(0);
+            res.body.length.should.be.above(0);
             res.body.forEach(function(item){
                 items.should.be.a('object');
                 items.should.have.all.keys(
@@ -45,7 +45,7 @@ describe('Blog Posts', function(){
         .send(newPost)
         .then(function(res){
             res.should.have(201);
-            res.shoulld.be.json;
+            res.should.be.json;
             res.body.should.be.json;
             res.body.should.be.a('object');
             res.body.should.have.all.keys(expectedKeys);
